@@ -57,7 +57,7 @@ class Booking extends HTMLElement {
     }
 
     onSeatClicked(oData){
-        debugger;
+        
         if(oData.detail && oData.detail.seat){
         let seat = oData.detail.seat;
             if(!seat.getAttribute("reserved")){
@@ -71,7 +71,7 @@ class Booking extends HTMLElement {
     }
   
     connectedCallback() {
-debugger;
+
       // main section which has all the lists 
       var exectiveSection = document.createElement('booking-section');
       exectiveSection.id = "exectiveSection"

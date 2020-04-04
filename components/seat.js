@@ -6,12 +6,12 @@ class Seat extends HTMLElement {
     }
 
     onSeatClicked(){
-      debugger;
+      
       window.dispatchEvent(new CustomEvent('SeatClicked', { detail:{seat:this}}));
     }
     
     removeSelection(){
-      debugger;
+      
       this.removeAttribute('reserved');
       this.classList.remove("reserved"); 
     }

@@ -16,7 +16,7 @@ class Row extends HTMLElement {
         return seats;
     }
     checkRightEmpty(seat,totalBooking){
-        debugger;
+        
         var seatid = Number(seat.getAttribute('index'));
         for(let i=1;i<totalBooking;i++){
             if(document.getElementById(this.id+" seat"+(seatid+i)).getAttribute('booked')==="true"){

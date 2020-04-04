@@ -1,0 +1,38 @@
+.seat{
+    width: 55px;
+    height: 55px;
+    border: 2px;
+    border-color: black;
+    display: inline-block;
+    border-style: outset;
+    text-align: center;
+}
+
+.section{
+padding-top: 25px;
+
+}
+
+.booked{
+
+background-color: gray;
+}
+
+.unbooked{
+    background-color: honeydew;
+}
+
+.reserved{
+    background-color: indianred;
+}
+
+ankit-booking{
+    display: block;
+}
+booking-row{
+    display: block;
+}
+
+booking-section{
+    display: block;
+}

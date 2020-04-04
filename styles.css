@@ -12,15 +12,14 @@
 padding-top: 25px;
 
 }
-
+.booking-seat{
+    cursor: pointer;
+}
 .booked{
-
+cursor: no-drop;
 background-color: gray;
 }
 
-.unbooked{
-    background-color: honeydew;
-}
 
 .reserved{
     background-color: indianred;

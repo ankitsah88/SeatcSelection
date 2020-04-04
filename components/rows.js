@@ -19,7 +19,7 @@ class Row extends HTMLElement {
         
         var seatid = Number(seat.getAttribute('index'));
         for(let i=1;i<totalBooking;i++){
-            if(document.getElementById(this.id+" seat"+(seatid+i)).getAttribute('booked')==="true"){
+            if(document.getElementById(this.id+" seat"+(seatid+i)).getAttribute('booked')=="true"){
                 return false;
             }
             return true;
@@ -35,7 +35,11 @@ class Row extends HTMLElement {
         seat.id = this.id+" seat"+i
         seat.className = "seat";
         seat.setAttribute('index',i);
-        seat.setAttribute('booked',"false");
+        if(i==3){
+        seat.setAttribute('booked',"true");
+        }else{
+            seat.setAttribute('booked',"false");
+        }
         if(i==1 || i== this.getAttribute('seats')-1){
         seat.setAttribute('price',250);
         seat.setAttribute('chrages','ex');

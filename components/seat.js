@@ -30,6 +30,8 @@ class Seat extends HTMLElement {
       content.class="seat";
       if(this.getAttribute("booked")==="false"){
         this.onclick = this.onSeatClicked;
+      }else{
+        this.classList.add("booked");
       }
       this.appendChild(content);
 
